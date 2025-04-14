@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心力的提升与实践 - 易仁永澄</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 保持相同的 tailwind 配置和样式 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#e6f5f0',
+                            100: '#ccebe1',
+                            500: '#00A06E',
+                            600: '#009063',
+                            700: '#007a54',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 保持相同的基础样式 */
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00A06E 0%, #007a54 100%);
+        }
+        .swiper {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            max-height: 600px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300A06E'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='white' font-family='Arial'%3E术%3C/text%3E%3C/svg%3E" alt="生财有术" class="h-8 w-8">
+                    <span class="ml-2 text-brand-500 font-bold">生财有术（返回首页）</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#switch" class="text-gray-600 hover:text-brand-500">心力开关</a>
+                    <a href="#map" class="text-gray-600 hover:text-brand-500">战略地图</a>
+                    <a href="#energy" class="text-gray-600 hover:text-brand-500">能量漏洞</a>
+                    <a href="#check" class="text-gray-600 hover:text-brand-500">内功自检</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg px-6 pt-32 pb-20 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">想做事，但是没心力，如何用三板斧破除干扰持续创造</h1>
+            <p class="text-xl opacity-90">分享者：易仁永澄（幸福进化俱乐部创始人，个人成长教练）</p>
+        </div>
+    </header>
+
+    <!-- 图片轮播 -->
+    <section class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/yongcheng-1.jpg" alt="心力开关：区分人与事">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/yongcheng-2.jpg" alt="战略地图工具">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/yongcheng-3.jpg" alt="能量漏洞管理">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/yongcheng-4.jpg" alt="内功自检方法">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- 核心摘要 -->
+    <section class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-brand-500">核心摘要</h2>
+            <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
+                本次分享聚焦于创业者"心力"的提升与实践。分享者首先强调心力是面对挑战时的"那股劲儿"，是老板思维与员工思维的关键区别，心力强才能驱动能力强的人做事。他认为提升心力需要"好资源"（如毛选智慧，现场提供小卡片）和"抓关键点"。核心内容围绕"一加三"展开：<strong>"一"是开启心力的关键开关</strong>——区分"人"与"事"， recognizes the internal spirit "me" and the external function "me", which is the key to maintain the internal state. <strong>"三"是三个具体的实践工具</strong>：1. 画"战略地图"，明确"我想要什么"（意图）、识别"主要矛盾/我会死在哪"（挑战）、聚焦"如何提效"（当前任务），从而抓住重点，避免战略懒惰。2. 堵住"能量漏洞"，识别并处理"干扰"（即不在状态、消极、不增长的表现），其根源是"未被看见的需要"，通过倾诉识别需求，将干扰转化为地图上的困难来管理。3. 一个核心"内功"自检：持续问自己"我的注意力在我想要的方向上吗？"，将注意力锚定在目标上，是保持心力稳定的关键。
+            </p>
+        </div>
+    </section>
+
+    <!-- 心力开关：区分"人"与"事" -->
+        <section id="switch" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+            <div class="flex items-center justify-center mb-12">
+                <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+                <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    开启心力开关：区分"人"与"事"
+                </h2>
+                <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 心力定义与价值 -->
+                <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600">心力定义与价值</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">心力定义</h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                面对困境时的那股"劲儿"，是面对场景的第一反应。强心力表现为"我行/试试/总能成"，弱心力表现为"不行/算了吧/太难了"。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">心力价值</h4>
+                            <p class="text-gray-600 dark:text-gray-400">
+                                心力强能驱动能力强的人做事；是老板思维（整合资源）与员工思维（执行任务）的核心差别。
+                            </p>
+                        </div>
+
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">经典案例</h4>
+                            <div class="space-y-3">
+                                <p class="text-gray-600">林丹 vs 李宗伟：两人技术水平接近甚至李更高，但林丹胜率远超，关键在于内在比赛的胜利，强大的心力（"没有我赢不了的事情"）。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 关键区分 -->
+            <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-brand-600">关键区分与实践</h3>
+                <div class="space-y-6">
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                        <h4 class="font-medium mb-3 text-lg text-brand-600">三个区分</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">1.</span>
+                                <div>
+                                    <p class="font-medium">区分"内在的我"与"外在的我"</p>
+                                    <p class="text-gray-600 mt-1">精神的我 vs 功能的我，精神不倒，一切皆有可能</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">2.</span>
+                                <div>
+                                    <p class="font-medium">区分"事儿"与"我"</p>
+                                    <p class="text-gray-600 mt-1">事是事，我是我，不要把事情的结果等同于自我价值</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">3.</span>
+                                <div>
+                                    <p class="font-medium">区分"目的"与"手段"</p>
+                                    <p class="text-gray-600 mt-1">保持目标清晰，手段灵活多变</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                        <h4 class="font-medium mb-3 text-lg text-brand-600">为何要区分</h4>
+                        <p class="text-gray-600 dark:text-gray-400">
+                            不区分，心力无法调动，易陷入"难、不、没"(太难了、我不会、没办法)的困境。区分后，能稳定内在状态，无论外部挑战多大。
+                        </p>
+                    </div>
+
+
+
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                        <h4 class="font-medium mb-3 text-lg text-brand-600">实践方法</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                </svg>
+                                <p class="text-gray-600">叉腰姿势：双手叉腰，挺直腰板，保持高能量姿势</p>
+                            </div>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"/>
+                                </svg>
+                                <p class="text-gray-600">强调"我"：说话时，"我"字加重音，确立主体地位</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                                <p class="text-gray-600">资源视角：所有一切都是"我"达成目标的资源</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 战略地图 -->
+        <section id="map" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+            <div class="flex items-center justify-center mb-12">
+                <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+                <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                    </svg>
+                    战略地图
+                </h2>
+                <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+            </div>
+        
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 战略地图核心要素 -->
+                <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600">目的与核心问题</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">目的</h4>
+                            <p class="text-gray-600 dark:text-gray-400">从全局抓重点，找到主要矛盾，避免战略懒惰，有效投入资源。</p>
+                        </div>
+                        
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">核心问题</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">1.</span>
+                                    <div>
+                                        <p class="font-medium">你想要啥? (What's the Goal/Intention?)</p>
+                                        <p class="text-gray-600 mt-1">定义成功的图景</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">2.</span>
+                                    <div>
+                                        <p class="font-medium">现在最难的问题是啥? (What's the Main Obstacle?)</p>
+                                        <p class="text-gray-600 mt-1">识别主要矛盾/敌人</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">3.</span>
+                                    <div>
+                                        <p class="font-medium">现在必须做的关键动作是啥? (What's the Key Action Now?)</p>
+                                        <p class="text-gray-600 mt-1">聚焦当前任务</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- 画图方法与应用 -->
+            <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-brand-600">画图方法与应用</h3>
+                <div class="space-y-6">
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                        <h4 class="font-medium mb-3 text-lg text-brand-600">画图方法</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">✦</span>
+                                <span>想象一张地图，将"现状"放在左下角，"想要的目标"放在右上角</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">✦</span>
+                                <span>将遇到的"困难/挑战"标记在中间区域，特别是"主要矛盾"</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">✦</span>
+                                <span>关键姿态：站在地图之外看（将军视角），保持叉腰姿势，不掉入具体事务中</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                        <h4 class="font-medium mb-3 text-lg text-brand-600">地图应用</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">1.</span>
+                                <div>
+                                    <p class="font-medium">目标（右上角）</p>
+                                    <p class="text-gray-600 mt-1">关于这事儿，我想要的是什么？（强调"我"，明确意图）</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">2.</span>
+                                <div>
+                                    <p class="font-medium">挑战（中间）</p>
+                                    <p class="text-gray-600 mt-1">我可能会死在哪里？-> Who not How?（找人解决）-> 我需要什么功能/角色来帮我？</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-brand-500 mr-2">3.</span>
+                                <div>
+                                    <p class="font-medium">当前任务（眼前）</p>
+                                    <p class="text-gray-600 mt-1">怎么提效？（成果/总投入，如何降低投入或提高产出？AI是重要工具）</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 能量漏洞 -->
+    <section id="energy" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="flex items-center justify-center mb-12">
+            <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+            <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+                堵住能量漏洞：识别与处理干扰
+            </h2>
+            <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+        </div>
+    
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 干扰识别 -->
+                <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                    <h4 class="text-2xl font-bold mb-6 text-brand-600">什么是干扰</h4>
+                    <div class="space-y-6">
+
+       
+                                <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                                    <h4 class="font-medium mb-3 text-lg text-brand-600">不在状态的表现</h4>
+                                    <ul class="space-y-4">
+                                        <li class="flex items-start">
+                                            <svg class="w-6 h-6 text-brand-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                            <div>
+                                                <p class="font-medium">情绪</p>
+                                                <p class="text-gray-600 mt-1">低迷，不高</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <svg class="w-6 h-6 text-brand-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                                            </svg>
+                                            <div>
+                                                <p class="font-medium">语言</p>
+                                                <p class="text-gray-600 mt-1">消极，无建设性（"难、不、没"，或言之无物）</p>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <svg class="w-6 h-6 text-brand-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/>
+                                            </svg>
+                                            <div>
+                                                <p class="font-medium">结果</p>
+                                                <p class="text-gray-600 mt-1">不增长（销售额、个人发展等）</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                                    <h4 class="font-medium mb-3 text-lg text-brand-600 flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                        </svg>
+                                        干扰根源
+                                    </h4>
+                                    <p class="text-gray-600 dark:text-gray-400">过往模式形成的自动化保护机制。当你想要追求某个目标时，过去的经验、恐惧、未满足的需求会形成阻力，"死死拽着你"。</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- 处理方法 -->
+                        <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-brand-600">处理方式</h3>
+                            <div class="space-y-6">
+                                <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                                    <h4 class="font-medium mb-3 text-lg text-brand-600 flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                        </svg>
+                                        倾诉方法
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                            </svg>
+                                            <span>找个安全空间（不建议找身边人，可能被利用），把内心不爽、真实想法和感受说出来</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                            <span>目的：通过倾诉看见自己真实的需要（如：需要被重视、需要外表好看、需要被认可等）</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                            <span>看见需要后，能量稳定，心力不再耗损</span>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                                    <h4 class="font-medium mb-3 text-lg text-brand-600 flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                        </svg>
+                                        常见误区
+                                    </h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                            </svg>
+                                            <span>认为有干扰是性格问题（错，有追求才会有干扰）</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                            </svg>
+                                            <span>必须消除所有干扰才能行动（错，可带着干扰行动）</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                            </svg>
+                                            <span>压抑情绪（错，越压越糟，会爆发）</span>
+                                        </li>
+                                        <li class="flex items-center space-x-3">
+                                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                            </svg>
+                                            <span>干扰是纯心态问题（错，通常对应现实问题）</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+
+    </section>
+
+    <!-- 内功自检 -->
+        <section id="check" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+            <div class="flex items-center justify-center mb-12">
+                <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+                <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                    <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    核心内功：注意力自检
+                </h2>
+                <div class="w-16 h-1 bg-brand-500 rounded-full"></div>
+            </div>
+    
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 核心问题 -->
+                <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600">核心自检问题</h3>
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                        <div class="text-xl font-medium text-brand-600 mb-4 text-center">
+                            "我的注意力在我想要的方向上吗？"
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400 text-center">
+                            将注意力锚定在目标上，是保持心力稳定的关键
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- 实践方法 -->
+                <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600">实践方法</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">定期检查</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">✦</span>
+                                    <span>每天固定时间进行自检</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">✦</span>
+                                    <span>关注注意力的方向和质量</span>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6">
+                            <h4 class="font-medium mb-3 text-lg text-brand-600">调整策略</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">✦</span>
+                                    <span>发现偏离及时调整</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">✦</span>
+                                    <span>建立提醒机制</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- 金句精选 -->
+    <section class="px-6 py-12 max-w-4xl mx-auto fade-in">
+        <h2 class="text-3xl font-bold mb-12 text-center text-brand-500">金句精选</h2>
+        <div class="space-y-6">
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"心力就是一股劲儿，就是你面对什么事儿的时候，你有那股劲儿。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"心力强让能力强的人做事儿。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"把那个我说话的时候，那个我字加上重音...我是这个事情的主人。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"没有任何事情比我想要的东西更重要。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"Who not How? (老板思维：找对人，而不是只问怎么做)。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"干扰背后有需求，你要把它找到。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"自检我的注意力在我想要的方向上吗？"</p>
+            </blockquote>
+        </div>
+    </section>
+            <!-- 推荐阅读 -->
+    <section class="px-6 py-12 max-w-4xl mx-auto fade-in">
+        <h2 class="text-3xl font-bold mb-12 text-center text-brand-500">推荐阅读</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- 第一本书 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all group">
+                <h3 class="text-xl font-bold mb-4 group-hover:text-brand-500">《身心合一的奇迹力量》</h3>
+                <div class="space-y-4">
+                    <img src="images/book1.jpg" alt="身心合一的奇迹" class="w-full h-80 object-contain rounded-lg mb-4">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        探讨如何实现身心的和谐统一，通过内在觉察和外在行动的结合，创造更好的生活状态和工作表现。这本书将帮助你更好地理解心力的本质。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 第二本书 -->
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all group">
+                <h3 class="text-xl font-bold mb-4 group-hover:text-brand-500">《10倍比2倍更简单》</h3>
+                <div class="space-y-4">
+                    <img src="images/book2.jpg" alt="10倍比2倍简单" class="w-full h-80 object-contain rounded-lg mb-4">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        颠覆传统思维，讲述为什么追求10倍增长反而比追求2倍增长更容易。本书将帮助你突破思维限制，建立更强大的心力支撑。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="gradient-bg py-12 mt-12 text-white w-full">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center mb-6">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='white'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='%2300A06E' font-family='Arial'%3E术%3C/text%3E%3C/svg%3E" alt="生财有术" class="h-12 w-12">
+            </div>
+            <p class="opacity-90">© 2025 生财有术</p>
+            <p class="mt-2 opacity-75">整理者&网站制作者：小查</p>
+        </div>
+    </footer>
+
+    <!-- 初始化轮播图 -->
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </section>
+
+    <!-- 初始化轮播图 -->
+        <script>
+            const swiper = new Swiper('.mySwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </section>
+</body>
+</html>

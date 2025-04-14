@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私域成交与高客单价成交的道法术器 - 梁靠谱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#e6f5f0',
+                            100: '#ccebe1',
+                            500: '#00A06E',
+                            600: '#009063',
+                            700: '#007a54',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #00A06E 0%, #007a54 100%);
+        }
+        .swiper {
+            width: 100%;
+            height: auto;  /* 改为自适应高度 */
+            aspect-ratio: 16/9;  /* 添加一个合适的宽高比 */
+        }
+        .swiper-slide {
+            text-align: center;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;  /* 防止图片溢出 */
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;  /* 改为 contain 以保持图片比例 */
+            max-height: 600px;  /* 设置最大高度 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center hover:opacity-80 transition-opacity">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300A06E'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='white' font-family='Arial'%3E术%3C/text%3E%3C/svg%3E" alt="生财有术" class="h-8 w-8">
+                    <span class="ml-2 text-brand-500 font-bold">生财有术（返回首页）</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#dao" class="text-gray-600 hover:text-brand-500">道</a>
+                    <a href="#fa" class="text-gray-600 hover:text-brand-500">法</a>
+                    <a href="#shu" class="text-gray-600 hover:text-brand-500">术</a>
+                    <a href="#qi" class="text-gray-600 hover:text-brand-500">器</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="gradient-bg px-6 pt-32 pb-20 text-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">千万级IP的私域成交，人人能复制的生财道法术器</h1>
+            <p class="text-xl opacity-90">分享者：梁靠谱（生财第五期圈友，第七、八期418拉新第一名，销冠孵化基地主理人，自媒体营销顾问）</p>
+        </div>
+    </header>
+
+    <!-- 图片轮播 -->
+    <section class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/kaopu-1.jpg" alt="道：定位与人设">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/kaopu-2.jpg" alt="法：动机与故事">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/kaopu-3.jpg" alt="术：技巧与策略">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/kaopu-4.jpg" alt="器：系统与工具">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- 核心摘要 -->
+    <section class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-brand-500">核心摘要</h2>
+            <p class="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
+                梁靠谱老师分享了他对于私域成交和高客单价成交的独创"道法术器"体系。"道"强调销售者的核心定位：成为"专家型+知音型"销售，建立信任与共鸣，而非单纯服务方；同时，精心打造个人品牌（人设、故事、定位）至关重要，"谁在卖"影响巨大。"法"聚焦于销售方法，核心是深度挖掘用户需求背后的"动机"，并善用故事（而非功能）来触动情感、构建场景。"术"提供了具体的销售技巧，如放大痛点、处理"太贵了"的异议、"隔山打牛"搞定决策链、以及运用"成交进度条"管理客户关系。"器"则关注系统工具，包括建立SOP、百问百答库、善用用户证言，并推荐使用DeepSeek等AI工具提升效率。
+            </p>
+        </div>
+    </section>
+
+     <!-- 道：定位与人设 -->
+    <section id="dao" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="flex items-center justify-center mb-12">
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+            <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                道：定位与人设
+            </h2>
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- 核心定位 -->
+            <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        核心定位
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-medium mb-3 text-lg flex items-center text-brand-600">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                理念
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">不做攀附的凌霄花，做与客户并肩的树。超越单纯的服务方，提供高价值建议和情感共鸣。</p>
+                        </div>
+                        
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-medium mb-3 text-lg flex items-center text-brand-600">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                                专家型案例
+                            </h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">✦</span>
+                                    <span>办公室装修销售：拆解大佬布局、结合风水国学</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-brand-500 mr-2">✦</span>
+                                    <span>财税销售：分析政策风险、提供策略建议</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-medium mb-3 text-lg flex items-center text-brand-600">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                                知音型特质
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-3">"我懂你，我能帮你。"用共情和鼓励的话语中和专家的压迫感。</p>
+                            <div class="space-y-2 pl-4 border-l-2 border-brand-500/30">
+                                <p class="text-brand-600 dark:text-brand-400 italic">"你这样有能力的老板一定能行"</p>
+                                <p class="text-brand-600 dark:text-brand-400 italic">"感谢愿意创业的人改变世界"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 人设价值 -->
+            <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 relative overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-l from-brand-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="relative z-10">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        人设价值
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-medium mb-3 text-lg flex items-center text-brand-600">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                                </svg>
+                                "易子而教"原理
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400">人们更易接受"非利益相关"或"特定身份"者的建议</p>
+                        </div>
+
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-medium mb-3 text-lg flex items-center text-brand-600">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                                </svg>
+                                案例展示
+                            </h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>体制内阿姨谈情商 vs 普通博主</span>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>中科院专家谈减肥 vs 普通博主</span>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>卖茶女骗局（人设引发保护欲）</span>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>助农直播（正当理由增加价值）</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-shadow">
+                            <h4 class="font-medium mb-3 text-lg flex items-center text-brand-600">
+                                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                                </svg>
+                                个人品牌三部曲
+                            </h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>商业定位：解决问题、产品、价格</span>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>人设打造：身份、故事、形象</span>
+                                </li>
+                                <li class="flex items-start group">
+                                    <span class="text-brand-500 mr-2 group-hover:scale-110 transition-transform">✦</span>
+                                    <span>独特价值：找到自己的差异化优势</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- 法：动机与故事 -->
+    <section id="fa" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="flex items-center justify-center mb-12">
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+            <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+                法：动机与故事
+            </h2>
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- 动机挖掘 -->
+            <div class="bg-gradient-to-tr from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 group">
+                <div class="relative">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                        <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        动机挖掘
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                            <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                                <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                                超越表面需求
+                            </h4>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4 italic border-l-2 border-brand-500/30 pl-4">
+                                理解行为背后的真正驱动力
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-start group/item hover:bg-brand-50/50 p-2 rounded-lg transition-colors">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <p class="text-gray-700 dark:text-gray-300">减肥需求背后：被前任嫌弃后想逆袭</p>
+                                </div>
+                                <div class="flex items-start group/item hover:bg-brand-50/50 p-2 rounded-lg transition-colors">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <p class="text-gray-700 dark:text-gray-300">加入生财后台：被老板PUA想独立、赚彩礼娶媳妇</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 故事力量 -->
+            <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 group">
+                <div class="relative">
+                    <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                        <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                        </svg>
+                        故事的力量
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                            <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                                <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                                案例展示
+                            </h4>
+                            <div class="space-y-4">
+                                <div class="group/case hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                    <p class="font-medium text-brand-600 flex items-center">
+                                        <svg class="w-4 h-4 mr-2 opacity-0 group-hover/case:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                        恒温杯案例
+                                    </p>
+                                    <p class="text-gray-600 dark:text-gray-400 ml-6">不讲材料专利，讲"孩子被烫伤，父母内疚，为爱发明"的故事</p>
+                                </div>
+                                <div class="group/case hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                    <p class="font-medium text-brand-600 flex items-center">
+                                        <svg class="w-4 h-4 mr-2 opacity-0 group-hover/case:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                        白酒案例
+                                    </p>
+                                    <p class="text-gray-600 dark:text-gray-400 ml-6">不讲工艺销量，讲"见岳父、化解心结、见证家庭幸福"的故事</p>
+                                </div>
+                                <div class="group/case hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                    <p class="font-medium text-brand-600 flex items-center">
+                                        <svg class="w-4 h-4 mr-2 opacity-0 group-hover/case:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                        </svg>
+                                        保险案例
+                                    </p>
+                                    <p class="text-gray-600 dark:text-gray-400 ml-6">嵌入伦理故事：未婚夫/妻遗传病、相亲对象父母养老问题</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 术：技巧与策略 -->
+    <section id="shu" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="flex items-center justify-center mb-12">
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+            <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+                </svg>
+                术：技巧与策略
+            </h2>
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- 放大痛点 -->
+            <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 group">
+                <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                    <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    放大痛点
+                </h3>
+                <div class="space-y-6">
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                        <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                            <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                            案例展示
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-start">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        孩子厌学：
+                                        <span class="text-brand-600">现在不管</span> → 
+                                        <span class="text-brand-600">初高中</span> → 
+                                        <span class="text-brand-600">大学</span> → 
+                                        <span class="text-red-500">母子关系恶化</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-start">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        孩子挑食：
+                                        <span class="text-brand-600">现在个子不高</span> → 
+                                        <span class="text-brand-600">影响生长激素分泌</span> → 
+                                        <span class="text-red-500">未来发育问题</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 处理价格异议 -->
+            <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 group">
+                <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                    <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    处理"太贵了"
+                </h3>
+                <div class="space-y-6">
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                        <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                            <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                            下锚点法
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-start">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        案例1：
+                                        <span class="text-brand-600">女友妈妈不同意</span> → 
+                                        <span class="text-yellow-600">假装出柜</span> → 
+                                        <span class="text-green-600">接受原女友</span>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-start">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        案例2：
+                                        <span class="text-brand-600">让老公做多件事</span> → 
+                                        <span class="text-yellow-600">减少任务量</span> → 
+                                        <span class="text-green-600">欣然接受</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                        <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                            <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                            拉到极限场景
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-start">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">几年不买现在损失多少</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-start">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">
+                                        小三劝退师案例：
+                                        <span class="text-brand-600">现在不花钱</span>，
+                                        <span class="text-red-500">未来私生子分家产损失更大</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- 器：系统与工具 -->
+    <section id="qi" class="px-6 py-12 max-w-6xl mx-auto fade-in">
+        <div class="flex items-center justify-center mb-12">
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+            <h2 class="text-3xl font-bold mx-6 text-brand-500 flex items-center">
+                <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                器：系统与工具
+            </h2>
+            <div class="w-16 h-1 bg-brand-500/30 rounded-full"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- SOP系统 -->
+            <div class="bg-gradient-to-br from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 group">
+                <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                    <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                    </svg>
+                    SOP标准化流程
+                </h3>
+                <div class="space-y-6">
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                        <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                            <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                            完整客户旅程
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">公域钩子</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">私域打招呼/见面礼</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">需求挖掘</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">产品推送</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">朋友圈/公众号内容策略</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI工具应用 -->
+            <div class="bg-gradient-to-bl from-white to-brand-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-8 shadow-lg transform hover:scale-102 transition-all duration-300 group">
+                <h3 class="text-2xl font-bold mb-6 text-brand-600 flex items-center">
+                    <svg class="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    DeepSeek应用
+                </h3>
+                <div class="space-y-6">
+                    <div class="bg-white/50 dark:bg-gray-800/50 rounded-lg p-6 backdrop-blur-sm hover:shadow-md transition-all">
+                        <h4 class="font-medium mb-4 text-lg flex items-center text-brand-600">
+                            <span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>
+                            特点与应用
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">"很懂中国人"，理解复杂需求</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">批量化内容生成（按平台、人群定制）</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">服务甲方案例：半天生成一周内容</span>
+                                </p>
+                            </div>
+                            <div class="group/item hover:bg-brand-50/50 p-3 rounded-lg transition-colors">
+                                <p class="flex items-center">
+                                    <span class="text-brand-500 mr-2 group-hover/item:scale-110 transition-transform">✦</span>
+                                    <span class="text-gray-700 dark:text-gray-300">销售团队：周五生成内容，周四集中回访</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- 金句精选 -->
+    <section class="px-6 py-12 max-w-4xl mx-auto fade-in">
+        <h2 class="text-3xl font-bold mb-12 text-center text-brand-500">金句精选</h2>
+        <div class="space-y-6">
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"世界上最难的两件事情：把你的想法放进别人脑袋里；让他把口袋的钱掏出来放你口袋里。——销售可以同时实现。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"道理是让人信服的，但是故事是让人相信或者是让人铭记的。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"只要你会给女性提供情绪价值，那你就来财。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"痛不痛决定了付多少钱？急不急决定了多快付钱。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"一对多的动作做的越多，你一对一的动作需要的会越少。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"一定要学会去面对最小的挫败瞬间。"</p>
+            </blockquote>
+            
+            <blockquote class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-brand-500">
+                <p class="text-lg italic">"伟大跟年龄无关，然后跟产量有关。"</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- 更多推荐 -->
+    <section class="px-6 py-12 max-w-4xl mx-auto fade-in mb-20">
+        <h2 class="text-3xl font-bold mb-12 text-center text-brand-500">更多推荐</h2>
+        <div class="space-y-4">
+            <a href="https://scys.com/articleDetail/xq_topic/4844511842424458" target="_blank" rel="noopener noreferrer" class="group block bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:translate-x-2">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-brand-500">每个人都在用认知编织世界——5.26梁靠谱深圳生财见面会有感</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                        </h3>
+                    </div>
+                    <svg class="h-5 w-5 text-gray-400 group-hover:text-brand-500 transform group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://scys.com/articleDetail/xq_topic/2855158581455121" target="_blank" rel="noopener noreferrer" class="group block bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:translate-x-2">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-brand-500">米小桦-生财线下聚会-梁靠谱“销售专场”广州站-复盘总结-7.27@梁靠谱 
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                        </h3>
+                    </div>
+                    <svg class="h-5 w-5 text-gray-400 group-hover:text-brand-500 transform group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://scys.com/articleDetail/xq_topic/1522144184188512" target="_blank" rel="noopener noreferrer" class="group block bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all hover:translate-x-2">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-brand-500">621北京生财线下，梁靠谱分享关于搞钱和成交的一切</h3>
+                        <p class="text-gray-600 dark:text-gray-400">
+                        </h3>
+                    </div>
+                    <svg class="h-5 w-5 text-gray-400 group-hover:text-brand-500 transform group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+   
+    
+    <!-- 页脚 -->
+    <footer class="gradient-bg py-12 mt-12 text-white w-full">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center mb-6">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='white'/%3E%3Ctext x='50' y='65' font-size='40' text-anchor='middle' fill='%2300A06E' font-family='Arial'%3E术%3C/text%3E%3C/svg%3E" alt="生财有术" class="h-12 w-12">
+            </div>
+            <p class="opacity-90">© 2025 生财有术</p>
+            <p class="mt-2 opacity-75">整理者&网站制作者：小查</p>
+        </div>
+    </footer>
+
+    <!-- 初始化Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+    </script>
+</body>
+</html>
